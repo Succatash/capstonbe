@@ -1,0 +1,27 @@
+{
+	"development": {
+		"username": "devcapstone",
+		"password": "process.env.DB_PASSWORD",
+		"database": "developmentDB",
+		"host": "localhost",
+		"dialect": "postgres",
+		"ssl": true,
+		"port": 5432
+
+	},
+	"test": {
+		"username": "root",
+		"password": null,
+		"database": "database_test",
+		"host": "127.0.0.1",
+		"dialect": "postgres",
+		"ssl":true
+	},
+	"production": {
+		"username": "process.env.DB_USERNAME",
+		"password":"process.env.DB_PASSWORD",
+		"database": "process.env.DB_NAME",
+		"host": "process.env.POSTGRESQL_DB_URI",
+		"dialect": "postgres"
+	}
+}
