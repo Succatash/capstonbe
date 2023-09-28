@@ -22,7 +22,7 @@ const db = {};
 // 	);
 // }
 
-let sequelize = new Sequelize(process.env.POSTGRESQL_DB_URI)
+let sequelize = new Sequelize(process.env.POSTGRESQL_DB_URI);
 
 
 fs.readdirSync(__dirname)
