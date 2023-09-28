@@ -43,7 +43,7 @@ if(!result){
 	res.json({success:result,user:"Wrong Password"})
 } else {
 
-	res.status(200).json({success:'hello',
+	res.status(200).json({success:result,
 		firstName:user.firstName, 
 		lastName:user.lastName})
 }
